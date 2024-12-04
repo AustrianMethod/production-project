@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+      //куда идет сборка по дефолту, но не важно, так как мы с вебпаком собираем
+      "outDir": "./dist/",
+      //не позволяет использовать переменные без явного указания типа
+      "noImplicitAny": true,
+      //модульная система сборки 
+      "module": "ESNext",
+      //в какую верисию будет компилироватсья код
+      "target": "es5",
+      "jsx": "react",
+      //позволяет обрабатывать js кроме ts
+      "allowJs": true,
+      //определяет какие модули будут
+      "moduleResolution": "node",
+      // esModuleInterop позволяет работать с пакетами, которые юзает common js как с обычными пакетами с помощью import 
+      "esModuleInterop": true,
+      //библиотеки node js не поддерживают дефолтный импорт
+      "allowSyntheticDefaultImports": true,
+    },
+    "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+  }
